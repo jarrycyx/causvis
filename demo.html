@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>cDEEP</title>
   <script src="https://cdn.tailwindcss.com"></script>
+
 </head>
+
 <body>
   <!-- Header Section -->
   <header class="sticky top-0 z-50 bg-white border-b py-3">
@@ -18,17 +21,22 @@
         <a href="/" class="text-base text-blue-700 hover:underline">Home</a>
         <a href="/demo" class="text-base text-blue-700 hover:underline">Demo</a>
         <a href="/dataset" class="text-base text-blue-700 hover:underline">Dataset</a>
-        <a href="https://arxiv.org/abs/2304.02643" target="_blank" class="text-base text-blue-700 hover:underline">Paper</a>
-        <a href="https://github.com/facebookresearch/segment-anything" target="_blank" class="text-base text-blue-700 hover:underline">Github</a>
+        <a href="https://arxiv.org/abs/2304.02643" target="_blank"
+          class="text-base text-blue-700 hover:underline">Paper</a>
+        <a href="https://github.com/facebookresearch/segment-anything" target="_blank"
+          class="text-base text-blue-700 hover:underline">Github</a>
       </nav>
     </div>
   </header>
+
   <body>
-    <iframe 
-    src="./dist/index.html" 
-    class="relative bg-white text-black px-4 py-20 h-[85vh] w-[98vw]" 
-    frameborder="1">
-</iframe>
+    <div class="text-center h-full w-full">
+      <div class="flex justify-center items-center h-full">
+        <iframe id="myIframe" src='./dist/index.html' class="relative bg-white text-black h-[90vh] w-[100vw]"
+          frameborder="1">
+        </iframe>
+      </div>
+    </div>
 
   </body>
 
@@ -37,5 +45,13 @@
     <p>&copy; 2024 Segment Anything by Meta AI</p>
   </footer>
 
-</body>
 </html>
+
+
+<style>
+
+  body {
+    overflow-y: hidden;
+  }
+
+</style>
