@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>cDEEP</title>
   <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+
 </head>
+
 <body>
   <!-- Header Section -->
   <header class="sticky top-0 z-50 bg-white border-b py-3">
@@ -16,78 +19,31 @@
       </a>
       <nav class="hidden md:flex space-x-6">
         <a href="/" class="text-base text-blue-700 hover:underline">Home</a>
-        <a href="./src/demo.html" class="text-base text-blue-700 hover:underline">Demo</a>
+        <a href="./demo.html" class="text-base text-blue-700 hover:underline">Demo</a>
         <a href="https://arxiv.org/" target="_blank" class="text-base text-blue-700 hover:underline">Paper</a>
         <a href="https://github.com/" target="_blank" class="text-base text-blue-700 hover:underline">Github</a>
       </nav>
     </div>
   </header>
 
-  <!-- Main Section -->
-  <section class="relative bg-white text-black px-4 py-20">
-    <div class="text-center">
-      <h1 class="text-4xl font-bold">cDEEP: causally-informed deep learning</h1>
-      <p class="mt-4 text-lg">Towards explainable and generalizable outcomes prediction in critical care.</p>
-    </div>
-
-    <!-- Demo Button -->
-    <div class="text-center mt-4">
-      <a href="./src/demo.html" class="inline-block text-lg bg-blue-600 text-white px-6 py-2 rounded-full">Try the demo</a>
-    </div>
-
-    <!-- Video Section -->
-    <div class="mt-10 mx-auto max-w-4xl">
-      <video class="w-full rounded-lg shadow-lg" poster="./assets/videobg-DzpMhgb8.png"  loop autoplay muted>
-        <source src="./assets/demo-YeVB5jrD.mp4" type="video/mp4">
-        Sorry, your browser doesn't support embedded videos.
-      </video>
-    </div>
-  </section>
-
-  <!-- Features Section -->
-  <!-- <section class="py-20 bg-white text-gray-700">
-    <div class="container mx-auto text-center">
-      <h2 class="text-3xl font-bold">Flexible Integration</h2>
-      <p class="mt-4 text-lg">SAM can integrate with other systems for a variety of tasks like object tracking and image editing.</p>
-      <div class="mt-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-        <div>
-          <video class="w-full" autoplay loop muted>
-            <source src="/assets/section-1.1a.mp4" type="video/mp4">
-            Sorry, your browser doesn't support embedded videos.
-          </video>
-          <p class="mt-4 text-sm text-gray-600">Prompt it with interactive points and boxes.</p>
-        </div>
-        <div>
-          <video class="w-full" autoplay loop muted>
-            <source src="/assets/section-1.1b.mp4" type="video/mp4">
-            Sorry, your browser doesn't support embedded videos.
-          </video>
-          <p class="mt-4 text-sm text-gray-600">Automatically segment everything in an image.</p>
-        </div>
-        <div>
-          <video class="w-full" autoplay loop muted>
-            <source src="/assets/section-1.1c.mp4" type="video/mp4">
-            Sorry, your browser doesn't support embedded videos.
-          </video>
-          <p class="mt-4 text-sm text-gray-600">Generate multiple valid masks for ambiguous prompts.</p>
-        </div>
+  <body>
+    <div class="text-center h-full w-full">
+      <div class="flex justify-center items-center h-full">
+        <iframe id="myIframe" src='causal_vis_dist/index.html' class="relative bg-white text-black h-[90vh] w-[100vw]"
+          frameborder="1">
+        </iframe>
       </div>
     </div>
-  </section> -->
 
-  <!-- Demonstration Button -->
-  <section class="py-20 bg-gray-100 text-center">
-    <h2 class="text-3xl font-bold">Want to try it out?</h2>
-    <a href="./src/demo.html" class="mt-6 inline-block text-lg bg-blue-600 text-white px-6 py-2 rounded-full">Go to Demo</a>
-  </section>
+  </body>
 
   <!-- Footer Section -->
   <!-- <footer class="bg-gray-800 text-white py-6 text-center">
     <p>2025</p>
   </footer> -->
 
-</body>
 </html>
+
 
 <style>*, ::before, ::after {
   --tw-border-spacing-x: 0;
@@ -3623,5 +3579,9 @@ select {
 }
 
 /* npx tailwindcss -i ./src/tailwind/input.css -o ./src/tailwind/output.css --watch */
-  
+
+body {
+    overflow-y: hidden;
+  }
+
 </style>
